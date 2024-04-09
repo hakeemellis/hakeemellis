@@ -1,0 +1,481 @@
+/* EXTERNAL CSS STYLING */
+
+body { /* to style main text content in body tag */
+    background-color: #000;
+    color: #fff;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 36px;
+    z-index: 1;
+}
+
+.menu-title {
+    font-size: 36px;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; 
+    z-index: 0; 
+}
+
+.card {
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+.hero { /* to style hero banner */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+}
+
+.hero span {
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 60px;
+}
+
+.biography { /* to style text within the card body */
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+img { /* to style image */
+    max-width: 40%;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+a { /* to style and give hyperlink color */
+    color: #ff9900;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover { /* hover style for hyperlink */
+    color: #ff6600;
+}
+
+/* Adding Navigation Class to alter NavBar for Reboot */
+
+.navigation {
+    background-color: #222;
+    padding: 10px 20px; /* to create space between elements */
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
+}
+
+.navigation h1 {
+    font-family: 'Lobster Two',sans-serif;
+    font-size: 35px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+}
+
+.navigation li {
+    margin: 0px 40px; /* to create further space between elements*/
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #ff9900;
+}
+
+
+/* For About Page */
+
+.about-subfont {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nested-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.nested-card-item {
+    width: calc(27% - 20px); /* to control width of card item to content within */
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.nested-card h3{
+    font-family: 'Lobster Two',sans-serif;
+    font-size: 35px;
+}
+
+.nested-card p {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+}
+
+.avatar { /* to give space between avatar container and the content */
+    margin-bottom: 10px;
+}
+
+.avatar img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 50%; /* to create "oval" effect */
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+/* Gallery Page */
+
+.video-container {
+    position: relative;
+    width: auto;
+    max-width: 100%;
+    padding-bottom: 56.25%; /* to get 16:9 aspect ratio for video */
+    overflow: hidden;
+    margin-bottom: -200px;
+}
+
+
+iframe { /* for youtube video */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 70%;
+    border: none;
+    margin: 0 auto;
+}
+
+
+.work-sample {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;  
+    text-align: center; 
+}
+
+.work-sample img{
+    max-width: 85%;
+    height: auto;
+}
+
+.work-sample h4 {
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+.work-sample a {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.work-sample p {
+    color: #ccc;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.gallery { /* for gallery photos with image-contaier */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* spread images evenly in the row */
+}
+
+.image-container a {
+    flex: 0 0 calc(33.33% - 10px); /* three images in a row with 10px margin between them */
+    margin-bottom: 20px; 
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 500px; 
+    object-fit: cover; 
+    object-position: 15% 15 15%; /* to force the image to position where I want it */
+    display: block;
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.image-container a:hover img {
+    box-shadow: 0 0 35px rgb(0, 0, 0);
+}
+
+/* Modal Styling */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-header .modal-title {
+    margin: 0;
+  }
+  
+  .modal-header .close {
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    text-align: center;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-dark {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-dark:hover {
+    background-color: #212529;
+  }
+  
+
+/*Styling Contact Form*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/*Text Edit for Google Font Implementation*/
+
+.roboto {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.lobster {
+    font-family: 'Lobster Two',sans-serif;
+    font-size: 42px;
+}
+
+/* Footer */
+
+.footy{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+/* MOBILE CSS (Just to fix Navbar when below 680px) */
+@media screen and (max-width: 768px) { 
+
+    /*NAVIGATION & SOME OF HOME PAGE*/
+
+    .menu-title {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 20px;
+        z-index: 1;
+    }
+
+    .hero span {
+        font-family: 'Lobster Two', sans-serif;
+        font-size: 40px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navigation ul {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle { /* for hamburger menu */
+        display: block;
+        cursor: pointer;
+        font-size: 27px;
+        margin-top: -15px;
+        transition: transform 0.5s ease; 
+    }
+
+    /* For rotating the menu icon */
+    .menu-toggle.rotate {
+        transform: rotate(90deg);
+    }
+
+    /* ABOUT PAGE */
+
+    .nested-card { /* for items to be in a column */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nested-card-item {
+        width: 80%; 
+        margin: 20px auto;
+    }
+
+    /* GALLERY */
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container a {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .work-sample img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    iframe { /* for youtube video */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 83%;
+        height: 70%;
+        border: none;
+        margin: 0 auto;
+    }
+    
+
+    /* FOOTER */
+
+    .footy{
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+}
+
+/* Hide the hamburger icon when not in mobile size */
+@media screen and (min-width: 769px) { 
+    .menu-toggle {
+        display: none;
+    }
+
+    .navigation ul {
+        display: flex !important; /* to ensure the menu is visible */
+    }
+}
+
+/* END OF MOBILE CSS */
+
+
+
+/* END OF STYLING FOR WEBSITE */
+

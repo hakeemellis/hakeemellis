@@ -1,0 +1,164 @@
+<!--
+    
+  Copyright (c) 2024 Hakeem Ellis
+  All rights reserved.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--METADATA-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Hakeem Ellis">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Hakeem Ellis</title>
+    <!--METADATA-->
+
+    <!--FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-firestore.js"></script>
+    <script src="/js/firebaseconfig.js"></script>
+    <script src="/js/firebase.js"></script>
+    <!--FIREBASE-->
+
+    <!--EXTERNAL CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--EXTERNAL CSS -->
+
+    <!--FONT STYLING-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <!--FONT STYLING-->
+
+</head>
+
+
+<!--CONTENT-->
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navigation">
+        <h1><a href="index.html"><strong class="menu-title">Hakeem Ellis</strong></a></h1>
+        <section class="menu-toggle" onclick="toggleMenu()">&#9776;</section>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <header class="hero">
+        <video autoplay muted loop>
+            <source src="videos/portfolio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Connect with: <span>My Spec Work</span></h1>
+    </header>
+    <!-- HERO BANNER -->
+
+    <!-- MAIN CONTENT -->
+    <main class="card">
+            <section class="biography">
+
+                <h2 class="lobster">Graphic Design Portfolio</h2>
+                 
+                 <section class="work-sample">
+                    <section class="image-container gallery">
+                        <a data-project="design1">
+                            <img src="images/websitecritique.jpeg" alt="Website Critique">
+                        </a>
+                    
+                        <a data-project="design2">
+                            <img src="images/smartwatch.jpeg" alt="Smartwatch User Persona">
+                        </a>
+                    
+                        <a data-project="design3">
+                            <img src="images/brochure.jpeg" alt="Brochure for Restaurant">
+                        </a>
+                    
+                        <a data-project="design4">
+                            <img src="images/music14.jpg" alt="SoulTribe Harmony on a Day Event">
+                        </a>
+                    
+                        <a href="images/music15.jpg" target="_blank">
+                            <img src="images/music15.jpg" alt="SoulTribe Harmony Group Photo-Up in the Fields">
+                        </a>
+                    
+                        <a href="images/music19.jpg" target="_blank">
+                            <img src="images/music19.jpg" alt="Ethan Pulsar Album Photoshoot for SoulTribe Harmony">
+                        </a>
+
+                        <a href="images/music16.jpg" target="_blank">
+                            <img src="images/music16.jpg" alt="SoulTribe Harmony, focused with Max Rayne">
+                        </a>
+                    
+                        <a href="images/music12.jpg" target="_blank">
+                            <img src="images/music12.jpg" alt="SoulTribe Harmony spinning sets">
+                        </a>
+                    
+                        <a href="images/music13.jpg" target="_blank">
+                            <img src="images/music13.jpg" alt="SoulTribe member Zara at a party spinning EDM">
+                        </a>
+                    </section>
+                  </section>
+
+                 <section class="work-sample">
+                    <h4>Buy the Album:</h4>
+                    <a href="images/album1.png" target="_blank">
+                    <img src="images/album1.png" alt="Soultribe Harmony Album Cover">
+                    </a>
+                    
+                    <p>Album Cover for "The Soul Bang"</p>
+                 </section>
+
+            </section>
+
+            <!-- Slideshow Modal -->
+            <div class="modal fade" id="slideshowModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Slideshow</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="slideshow-container"></div>
+                      <br>
+                      <center>
+                      <button id="prevButton" type="button" class="btn btn-dark">Previous</button>
+                      <button id="nextButton" type="button" class="btn btn-dark">Next</button>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- End of Slideshow Modal -->
+            
+    </main>
+    <!-- MAIN CONTENT -->
+
+    <!-- LINK TO MY WEB PORTFOLIO -->
+    <footer class="card">
+        <h4 class="footy">&copy; 2023 Soultribe Harmony <a href="//hakeemellis.com/" target="_blank"><b>Designed by Hakeem Ellis</b></a></h4>
+    </footer>
+    <!-- LINK TO MY WEB PORTFOLIO -->
+
+</body>
+<!--CONTENT-->
+
+<!--MY SCRIPT-->
+<script src="/js/main.js"></script>
+<!--MY SCRIPT-->
+
+</html>

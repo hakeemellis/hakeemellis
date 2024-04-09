@@ -1,0 +1,100 @@
+<!--
+    
+  Copyright (c) 2024 Hakeem Ellis
+  All rights reserved.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hakeem Ellis">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - Hakeem Ellis</title>
+
+    <!--EXTERNAL CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--EXTERNAL CSS -->
+
+    <!--FONT STYLING-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <!--FONT STYLING-->
+
+</head>
+
+
+<!--CONTENT-->
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navigation">
+        <h1><a href="index.html"><strong class="menu-title">Hakeem Ellis</strong></a></h1>
+        <section class="menu-toggle" onclick="toggleMenu()">&#9776;</section>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <header class="hero">
+        <video autoplay muted loop>
+            <source src="videos/contact.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Contact Me: <span>For Seamless Collaborations</span></h1>
+    </header>
+    <!-- HERO BANNER -->
+
+    <!-- MAIN CONTENT -->
+    <main class="card">
+            <section class="biography">
+                
+                <p>Feel free to reach out to us through the contact form below. We look forward to hearing from you!</p>
+                
+                <!-- Contact Form -->
+                <form id="contactForm" class="roboto" action="https://formspree.io/f/mrgwpqrv" method="POST">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+        
+                    <button type="submit">Send Message</button>
+                </form>
+                <!-- Contact Form -->
+
+                <br>
+
+                <p>Should the form not work and you'd like to collaborate, share ideas or simply say hello, please don't hesitate to <a href="mailto:notmyemail@clearlyfake.com"><b>email me</b></a>.</p>
+            </section>
+
+    </main>
+    <!-- MAIN CONTENT -->
+
+    <!-- LINK TO MY WEB PORTFOLIO -->
+    <footer class="card">
+        <h4 class="footy">&copy; 2023 Soultribe Harmony <a href="//hakeemellis.com/" target="_blank"><b>Designed by Hakeem Ellis</b></a></h4>
+    </footer>
+    <!-- LINK TO MY WEB PORTFOLIO -->
+
+</body>
+<!--CONTENT-->
+
+<!--SCRIPT-->
+<script src="js/main.js"></script>
+<!--SCRIPT-->
+
+</html>
