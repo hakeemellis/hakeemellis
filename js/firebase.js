@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentImageIndex = 0;
     let contentUrls = [];
   
-    // Function to load content from Firebase Storage based on project name
+    // Function to load content from Firebase Storage 
     function loadContentFromFirebase(projectName) {
       imagesContainer.innerHTML = '';
       currentImageIndex = 0;
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
       prevButton.disabled = contentUrls.length <= 1;
     }
   
-    // Example usage when an image is clicked
+    // To finally showcase content that's clicked within the modal based on assigned "data-project"
     const imageLinks = document.querySelectorAll('.image-container a');
   
     imageLinks.forEach((link) => {
@@ -115,3 +115,4 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   
+// this code based on code from my actual portfolio i.e. https://hakeemellis.com/
