@@ -15,6 +15,26 @@ function toggleMenu() {
     
 }
 
+// Show button with transition after 3 seconds
+  setTimeout(function() {
+  document.querySelector('.portfoliobutton').classList.add('show');
+  }, 3000);
+
+
+// PDF Prompt for Mobile //
+document.addEventListener('DOMContentLoaded', function() {
+
+ element = document.querySelector('.pdf');
+
+  if (element) {
+    element.addEventListener('click', function() {
+      if (window.innerWidth < 1080) {
+        alert('PDF format. Unfortunately, this will only show properly for Desktop. Apologies');
+      }
+    });
+  }
+});
+
 
 // Contact Form Submission //
 
@@ -55,3 +75,4 @@ if (urlParams.get('success') === 'true') {
   alert('Information submitted successfully! Will respond within one business day :)');
 }
 
+// this code based on code from my actual portfolio i.e. https://hakeemellis.com/
