@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (element) {
     element.addEventListener('click', function() {
       if (window.innerWidth < 1080) {
-        alert('PDF format. Unfortunately, this will only show properly for Desktop. Apologies');
+        alert('PDF format. Unfortunately, this will only show properly for Desktop Users ONLY. Apologies');
       }
     });
   }
